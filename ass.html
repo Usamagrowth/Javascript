@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
-</head>
-<body>
+    <script src="./display.js"></script>
+  </head>
+  <body>
     <script>
-    //section A
-    //push & pop is use to add and remove element
-    let colour = ["white", "blue", "red"]
-    let addColour = colour.push()
-    let removeColour = colour.pop()
-    console.log(addColour);
-    console.log(removeColour); //1.
+      //section A
+      //push & pop is use to add and remove element
+      let colour = ["white", "blue", "red"];
+      let addColour = colour.push();
+      let removeColour = colour.pop();
+      console.log(addColour);
+      console.log(removeColour); //1.
 
-    let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    console.log(numbers.filter((x) => x % 2 === 0)); //2.
-    
-    // find method we only take the first element
-    let number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    console.log(number.find((x) => x > 15)); //3.
+      let numbers = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ];
+      console.log(numbers.filter((x) => x % 2 === 0)); //2.
 
-     //section B
+      // find method we only take the first element
+      let number = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ];
+      console.log(number.find((x) => x > 15)); //3.
 
-     //they are command used to declear things to do if we have two or multiple options //1.
-    let score = 80;  //1.
-    if (score >= 70) {
+      //section B
+
+      //they are command used to declear things to do if we have two or multiple options //1.
+      let score = 80; //1.
+      if (score >= 70) {
         console.log("Very Good");
-    } else if (score >= 45) {
+      } else if (score >= 45) {
         console.log("Good");
-    }
-   else{
+      } else {
         console.log("fail");
-    }
+      }
 
+      let num = 2; //2.
+      if (num != 0) {
+        if (num > 0) {
+          console.log("The number is positive");
+        } else {
+          console.log("The number is negative");
+        }
+      } else {
+        console.log("The number is zero");
+      }
 
-    let num = 2;    //2.
-   if (num != 0) {
-    if (num > 0) {
-        console.log("The number is positive");
-    } else {
-        console.log("The number is negative");
-    }
-    }  else {
-       console.log("The number is zero");
-    }
-
-     
-    let days = "monday" //3.
-    switch (days) {
+      let days = "monday"; //3.
+      switch (days) {
         case "monday":
-    console.log("start the week")
-            break;
-     case "tuesday":
-    console.log("second day of the week")
-            break;
-    
-        default: "wednesday"
-    console.log("mid day of week")
-            break;
-    }
+          console.log("start the week");
+          break;
+        case "tuesday":
+          console.log("second day of the week");
+          break;
 
-    // (==, ===, !=, !==, >, <) //4.
-    // Comparison operators are used to compare two values 
-    // and return a boolean (true or false) 
-    // based on the comparison. 
+        default:
+          "wednesday";
+          console.log("mid day of week");
+          break;
+      }
 
-     Operator|	Description|	  Example|	Output
-     // ==	Equal| (with type coercion)	5 == "5"	true
-     // ===	Equal (strict, no type coercion)	5 === "5"	false
-     // !=	Not equal (with type coercion)	5 != "5"	false
-     // !==	Not equal (strict, no type coercion)	5 !== "5"	true
-     // >	Greater than	10 > 5	true
-     // <	Less than	5 < 10	true
-     // >=	Greater than or equal to	5 >= 5	true
-    //  <=	Less than or equal to	5 <= 5	true
+      // (==, ===, !=, !==, >, <) //4.
+      // Comparison operators are used to compare two values
+      // and return a boolean (true or false)
+      // based on the comparison.
 
+      Operator | Description | Example | Output;
+      // ==	Equal| (with type coercion)	5 == "5"	true
+      // ===	Equal (strict, no type coercion)	5 === "5"	false
+      // !=	Not equal (with type coercion)	5 != "5"	false
+      // !==	Not equal (strict, no type coercion)	5 !== "5"	true
+      // >	Greater than	10 > 5	true
+      // <	Less than	5 < 10	true
+      // >=	Greater than or equal to	5 >= 5	true
+      //  <=	Less than or equal to	5 <= 5	true
 
+      let studentScore = 50;
+      if (studentScore > 45) {
+        console.log("passed");
+      } else {
+        console.log("failed");
+      }
 
-   let studentScore = 50;
-   if (studentScore > 45) {
-    console.log("passed")
-   }
-   else{
-    console.log("failed")};
+      //Section C
+      // A function is a reusable block of code
+      // designed to carry out a specific task. //1.
+      function functionName(parameters) {
+        return result;
+        console.log(functionName());
+      }
 
-    //Section C
-    // A function is a reusable block of code
-    // designed to carry out a specific task. //1.
-    function functionName(parameters) {
-    return result; 
-    console.log(functionName());
-}
+      function greetUser(Hammed, welcome) {
+        //2.
+        return Hammed + welcome;
+      }
+      console.log(greetUser(Hammed, welcome));
 
-    function greetUser(Hammed, welcome) //2.
-   { 
-    return Hammed + welcome
-    };
-    console.log(greetUser(Hammed, welcome));
-    
-    function number(a, b) {   //3.
-    return a * b
-    };
-    console.log(number(3, 5));
+      function number(a, b) {
+        //3.
+        return a * b;
+      }
+      console.log(number(3, 5));
     </script>
-</body>
+  </body>
 </html>

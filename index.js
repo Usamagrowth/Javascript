@@ -1,12 +1,12 @@
-// const results = document.querySelector("#title");
-//console.log(results.innerText);
-//document.getElementById("title").innerText = "welcome to javascript"
+const results = document.querySelector("#title");
+console.log(results.innerText);
+document.getElementById("title").innerText = "welcome to javascript"
 //document.querySelector("button").setAttribute("disabled", true);
 //document.querySelector("#title").style.color = "blue"
 document.querySelector(".di").style.padding = "100px"
 document.querySelector(".di").style.display = "inline"
 //document.querySelector("h2").style.fontsize = "20px"
-//unction btn() { document.querySelector("#title").innerText = "Hello Usama"
+//function btn() { document.querySelector("#title").innerText = "Hello Usama"
 //};
 //const button = document.querySelector("button")
 //const text = document.querySelector("#title")
@@ -14,7 +14,7 @@ document.querySelector(".di").style.display = "inline"
  // alert("button was clicked")
  // title.innerText = "welcome Username"
   // title.style.color = "green"
- // const message = document.createElement("button"); // toadd new element
+ // const message = document.createElement("button"); // to add new element
  // message.innerText = "Registration Successful";
  // document.body.appendChild(message)
   //message.style.color = "red"

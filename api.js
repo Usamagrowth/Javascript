@@ -19,11 +19,12 @@ const getApi = async () => {
     try {
     const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
+    displayProduct(data.products)
  
     // const first20 = data.products.slice(0, 10)
     //    displayProduct(first20);
-    const fiiteredproduct = data.products.filter((p) => p.price < 10);
-    displayProduct(fiiteredproduct);
+   // const fiiteredproduct = data.products.filter((p) => p.price < 10);
+   // displayProduct(fiiteredproduct);
     } 
     catch(error) {
    console.error("error", error)

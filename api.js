@@ -19,10 +19,10 @@ const getApi = async () => {
     try {
     const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
+    console.log(data)
     displayProduct(data.products)
- 
-    // const first20 = data.products.slice(0, 10)
-    //    displayProduct(first20);
+    //const first20 = data.products.slice(0, 10)
+    //displayProduct(first20);
    // const fiiteredproduct = data.products.filter((p) => p.price < 10);
    // displayProduct(fiiteredproduct);
     } 
@@ -30,6 +30,8 @@ const getApi = async () => {
    console.error("error", error)
     }
 };
+
+getApi();
 
 // Render product cards
 
@@ -45,9 +47,11 @@ function displayProduct(products) {
         <h3>${product.title}<h3/>
         <p>price: $${product.price}</p>
         <p>${product.description.slice(0, 60)}</p>
-        <p>comment: ${product.reviews[0].comment}...</p>
+        <p>comment: ${product.reviews[0].comment}</p>
+        <p>brand: ${product.brand}</p>
+        <p>${product.shippingInformation}</p>
+         <p>${product.availabilityStatus}</p>
         `
-      
         ;
         list.appendChild(li)
     });

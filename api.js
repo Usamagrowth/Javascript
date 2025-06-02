@@ -48,7 +48,7 @@ function displayProduct(products) {
         <p>price: $${product.price}</p>
         <p>${product.description.slice(0, 60)}</p>
         <p>comment: ${product.reviews[0].comment}</p>
-        <p>brand: ${product.brand}</p>
+        <p>${product.brand}</p>
         <p>${product.shippingInformation}</p>
          <p>${product.availabilityStatus}</p>
         `
